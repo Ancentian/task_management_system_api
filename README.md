@@ -79,6 +79,21 @@ php artisan db:seed
 - **Update a Task**: `PUT /tasks/{id}`      [UPDATE](http://localhost:8000/update-task/{id})
 - **Delete a Task**: `DELETE /tasks/{id}`   [DELETE](http://localhost:8000/delete-task/{id})
 
+1. Create a Task
+http://localhost:8000/store
+
+2. Get All Tasks
+http://localhost:8000/tasks
+
+3. Get a Specific Task
+http://localhost:8000/tasks/{id}
+
+4. Update a Task
+http://localhost:8000/update-task/{id}
+
+5. Delete a Task
+http://localhost:8000/delete-task/{id}
+
 
 ## Bonus Features
 
@@ -89,7 +104,16 @@ php artisan db:seed
 [PAGINATION](http://localhost:8000/tasks?page=1)
 
 - Search functionality to find tasks by title.
-[SEARCH TITLE](http://localhost:8000/tasks?title=Test)
+[SEARCH TITLE](http://localhost:8000/tasks?title=title)
+
+1. Filter by Status
+http://localhost:8000/tasks?status=pending
+
+2. Pagination
+http://localhost:8000/tasks?page=1
+
+3. Search Title
+http://localhost:8000/tasks?title=title
 
 
 ## Testing the API
